@@ -45,7 +45,11 @@ There is an example to show how to derived keys in package `Example`->class `Tes
 
 Three functions are needed to complete a derived process.
 
-1. `ExtendedKey.generateParentPublicKey` returns a base58 encoded string, which should be saved by wallet.
+1. `ExtendedKey.generateParentPublicKey` returns a base58 encoded string, like this:
+```
+vsysPubqcFvyLU3S1SC75CEVA3jaJKZTR83Tn74P1pJk2mg3YoymrMWqrn35g7TYoEA8AoCdyohQt8Lj3MhqBZJUKQDmxEE3AVR94L6tUXHx4
+```
+which should be saved by wallet.
 All the child public keys' generation depend on, and only depend on this string.
 
 2. `ExtendedKey.generateChildPublicKeyBytes` returns the v-systems public keys through the above mentioned string.
