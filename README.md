@@ -6,6 +6,9 @@ changed to fit the [v-systems](https://github.com/virtualeconomy)' public key ge
 By using this tool, a wallet can calculate the public keys without revealing the private keys, and derived multiple keypair 
 chains from a single root.
 
+This tool is based on [`package org.whispersystems.curve25519.java`](https://github.com/icreator/Erachain_public/tree/master/org/whispersystems/curve25519/java) from repository `Erachain_alpha` of organization
+`icreator`.
+
 ## Difference between VSYS_HDkey and BIP32
 
 ### 1. Master key generation
@@ -19,6 +22,7 @@ i[31] |= 64;
 which is based on the description of elliptic curve cryptography algorithm [Ed25519](http://ed25519.cr.yp.to).
 
 ### 2. Extension process
+
 
 Only the first 28 bytes of `il` are used to generate child keys, which is designed to avoid the child private keys' length 
 exceeding the limit of 32 bytes. 
