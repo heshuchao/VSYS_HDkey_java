@@ -13,7 +13,7 @@ This tool is based on [`package org.whispersystems.curve25519.java`](https://git
 
 ### 1. Root key generation
 
-After the master key is generated , a few more operations were performed.
+After the root key is generated , a few more operations were performed.
 ```
 i[0] &= 248;
 i[31] &= 127;
