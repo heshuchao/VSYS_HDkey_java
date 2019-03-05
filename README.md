@@ -34,7 +34,7 @@ Before added to parent private keys, `il` is multipied by `8`, this can prevent 
 The extension process is based on Ed25519 points, meanwhile the v-systems uses X25519 points to generate addresses.So a conversion 
 operation is performed, see package `systems.v.hdkey`->class `curve_points`->function `convert_Ed_to_X`.
 
-###4. Other details changes
+### 4. Other details changes
 
 The boundary value of normal derived and hardened derived is setted to `0x70000000`.
 
