@@ -11,7 +11,7 @@ This tool is based on [`package org.whispersystems.curve25519.java`](https://git
 
 ## Difference between VSYS_HDkey and BIP32
 
-### 1. Master key generation
+### 1. Root key generation
 
 After the master key is generated , a few more operations were performed.
 ```
@@ -27,7 +27,7 @@ which is based on the description of elliptic curve cryptography algorithm [Ed25
 Only the first 28 bytes of `il` are used to generate child keys, which is designed to avoid the child private keys' length 
 exceeding the limit of 32 bytes. 
 
-Before added to parent public keys, `il` is multipied by `8`, this can prevent the last 3 bits of private keys been changed.
+Before added to parent private keys, `il` is multipied by `8`, this can prevent the last 3 bits of private keys been changed.
 
 ### 3. Public key generation
 
