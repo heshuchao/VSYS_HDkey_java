@@ -37,6 +37,7 @@ operation is performed, see package `systems.v.hdkey`->class `curve_points`->fun
 ###4. Other details changes
 
 The boundary value of normal derived and hardened derived is setted to `0x70000000`.
+
 The hash function of parent finger print generation is changed to single `sha256`.
 Others...
 ## How to use
