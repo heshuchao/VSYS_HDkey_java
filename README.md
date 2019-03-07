@@ -1,8 +1,7 @@
 # Hardened Derived Key Management Tool for V-Systems
 
 ## About
-This tool uses [Bitcoin's BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) for reference, some steps are 
-changed to fit the [v-systems](https://github.com/virtualeconomy)' public key generation.
+This tool uses [Bitcoin's BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) for reference, some steps have been changed to fit the [v-systems](https://github.com/virtualeconomy)' public key generation.
 By using this tool, a wallet can calculate the public keys without revealing the private keys, and derived multiple keypair 
 chains from a single root.
 
